@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--Custom styles-->
+    <title>My Portfolio</title>
+</head>
+<body>
+<!--Navigation bar--bg-indigo-900 logo,about portfolio & contact -->
+<!--hambuger icon from heroicons.com-->
+
+<nav class="flex justify-between items-center h-16 bg-indigo-900 text-white relative">
+    <a href="index.html" class="pl-6">LOGO</a>
+    <div class="px-4 cursor-pointer md:hidden" id="bars">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+        </svg>
+    </div>
+    <div class="hidden md:block" id="menu">
+        <a href="index.html" class="p-4">About</a>
+        <a href="index.html" class="p-4">Portfolio</a>
+        <a href="index.html" class="p-4">Contact</a>
+    </div>
+
+</nav>
+<!--Hero--Bg-white and text centered-->
+<section id="hero" class="hero"></section>
+<!--intro--bg-indigo-900 and text centered-->
+<section id="intro" class="intro"></section>
+<!--Skills-bg-white and text centered-->
+<section id="skills"  class="skills"></section>
+<!--project-bg-white and text centered-->
+<section id="project" class="projects"></section>
+<!--contact/footer--bg-indigo-900 and text centered-->
+<section id="contact" class="contact"></section>
+
+</body>
+</html>
