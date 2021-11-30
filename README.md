@@ -9,3 +9,7 @@ Redesign of html and using css file in preference to Tailwinds.
 Added CSS for navbar.
 Changed font to Poppins 
 
+3rd Push :-
+
+applied more styliing to style.css file. 
+
