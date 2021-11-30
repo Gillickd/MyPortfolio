@@ -6,41 +6,103 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+
     <!--Fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <!--Custom styles-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- styles-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
     <title>My Portfolio</title>
 </head>
 <body>
-<!--Navigation bar--bg-indigo-900 logo,about portfolio & contact -->
-<!--hambuger icon from heroicons.com-->
+<!--Navigation-->
+<div class="nav-container">
+    <header>
+        <a href="index.html" id="logo" >David Gillick</a>
+        <nav>
+            <ul class="header-list">
+                <li><a class="header-item" href="#">about me</a></li>
+                <li><a class="header-item" href="#">Projects</a></li>
+                <li><a class="header-item" href="#">Lets chat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Social Area-->
+    <div class="social-header">
+        <ul>
+            <li><a href="https://dribbble.com/" target="_blank"><img src="images/dribble.png" alt="dribble"></a></li>
+            <li><a href="https://uk.linkedin.com/" target="_blank"><img src="images/linkedln.png" alt="linkedln"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter"></a></li>
 
-<nav class="flex justify-between items-center h-16 bg-indigo-900 text-white relative">
-    <a href="index.html" class="pl-6">LOGO</a>
-    <div class="px-4 cursor-pointer md:hidden" id="bars">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-        </svg>
-    </div>
-    <div class="hidden md:block" id="menu">
-        <a href="index.html" class="p-4">About</a>
-        <a href="index.html" class="p-4">Portfolio</a>
-        <a href="index.html" class="p-4">Contact</a>
+        </ul>
     </div>
 
-</nav>
-<!--Hero--Bg-white and text centered-->
-<section id="hero" class="hero"></section>
-<!--intro--bg-indigo-900 and text centered-->
-<section id="intro" class="intro"></section>
-<!--Skills-bg-white and text centered-->
-<section id="skills"  class="skills"></section>
-<!--project-bg-white and text centered-->
-<section id="project" class="projects"></section>
-<!--contact/footer--bg-indigo-900 and text centered-->
-<section id="contact" class="contact"></section>
+</div>
+
+<!--hero-->
+<div class="hero">
+    <div class="content">
+        <h1>Front End Developer</h1>
+        <div class="meet">
+            <span>👇🏻</span>
+            <p>Meet David Gillick</p>
+        </div>
+
+    </div>
+    <!--hero image here-->
+</div>
+
+<!--featured projects section-->
+<section class="featured">
+    <!--Left Column Area-->
+    <div class="left-column">
+        <div class="inner-transition">
+            <p class="subtitle">Featured Project</p>
+            <a href="#" class="feature-title">Time Management Dashboard</a>
+            <p class="featured-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+        </div>
+    </div>
+    <img  class="right transition"   src="images/time-management.png" alt="featured project">
+</section>
+
+<!--portfolio section -->
+<section class="portfolio">
+
+    <!--Item1-->
+    <div class="portfolio-container">
+        <div class="portfolio-left">
+            <div class="inner">
+                <p class="subtitle">Tasklist</p>
+                <p class="featured-title">Tasklist feature title</p>
+                <p class="subtitle">lorem ipsum</p>
+            </div>
+        </div>
+        <a href="#"><img src="images/tasklist.png" alt="tasklist"></a>
+    </div>
+
+    <!--Item2-->
+    <div class="portfolio-container">
+        <div class="portfolio-left">
+            <div class="inner">
+                <p class="subtitle">Shapes</p>
+                <p class="featured-title">Shapes feature title</p>
+                <p class="subtitle">lorem ipsum</p>
+            </div>
+        </div>
+        <a href="#"><img src="images/shapes.png" alt="shapes"></a>
+    </div>
+
+    <!--Item3-->
+    <div class="portfolio-container">
+        <div class="portfolio-left">
+            <div class="inner">
+                <p class="subtitle">Fourcards</p>
+                <p class="featured-title">Fourcards feature title</p>
+                <p class="subtitle">lorem ipsum</p>
+            </div>
+        </div>
+        <a href="#"><img src="images/fourcards.png" alt="fourcards"></a>
+    </div>
+</section>
 
 </body>
 </html>
