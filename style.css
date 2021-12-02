@@ -109,3 +109,102 @@ section{
     line-height: 1.8em;
     font-weight: 500;
 }
+
+.featured img{
+    border-radius: 10px;
+    
+}
+
+.portfolio{
+    background: #f7f7f7
+}
+.portfolio-container{
+    border-radius: 1em;
+    margin-bottom: 2em;
+
+}
+
+section {
+    padding: 4em;
+
+
+}
+@media only screen and (min-width:800px) {
+    .featured, .portfolio {
+        text-align:left;
+    }
+    .featured, .portfolio-container{
+        display:grid;
+        grid-template-columns: 40% auto;
+
+    }
+    .left, .portfolio-left{
+        display:grid;
+        place-content: center;
+    }
+    .right{
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+    .portfolio{
+        padding-top: 7em;
+    }
+    .portfolio-container img{
+        margin-left: 2em;
+    }
+
+}
+@media only screen and (min-width:1050px) {
+    .nav-container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+    }
+
+    header {
+        background: #6700ee;
+    }
+
+    header {
+        padding: 2em 2em 2em 4em;
+
+    }
+
+    .social-header {
+        padding: 2em 4em 2em 0;
+        display: block;
+        color: #6700ee;
+
+    }
+    .social-header ul {
+        display:flex;
+        justify-content: space-between;
+        width: 7em;
+        float:right;
+
+
+    }
+
+    .social-header img{
+        width:20px;
+    }
+
+    .portfolio img{
+        float:right;
+        max-width: 500px;
+        border-radius: 10px;
+    }
+    .hero{
+        border-top-right-radius: 10px;
+    }
+
+    .hero h1{
+            font-size: 3em;
+            line-height: 1.2em;
+            }
+
+
+
+
+
+}
