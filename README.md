@@ -13,3 +13,9 @@ Changed font to Poppins
 
 applied more styliing to style.css file. 
 
+4th Push :-
+
+added styling @media screen for 800px and 1050px
+added social icon files 
+
+
